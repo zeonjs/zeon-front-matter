@@ -1,0 +1,29 @@
+{
+  "name": "zeon-front-matter",
+  "version": "0.0.0",
+  "description": "zeon-front-matter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeonjs/zeon-front-matter.git"
+  },
+  "keywords": [
+    "zeon"
+  ],
+  "author": "Zhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeonjs/zeon-front-matter/issues"
+  },
+  "homepage": "https://github.com/zeonjs/zeon-front-matter#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.1"
+  },
+  "dependencies": {
+    "js-yaml": "^3.3.1"
+  }
+}
