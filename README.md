@@ -1,5 +1,8 @@
 # zeon-front-matter
-Extract front matter
+
+[![NPM](https://nodei.co/npm/zeon-front-matter.png)](https://nodei.co/npm/zeon-front-matter/)
+
+Extract front matter from strings.
 
 Install
 ===
