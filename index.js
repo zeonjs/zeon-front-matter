@@ -3,7 +3,8 @@
 var yaml = require('js-yaml');
 var regex = {
   yaml: /^([\s\S]*?)(-{3,})\n([\s\S]+?)\n\2(?:$|\n([\s\S]*)$)/,
-  comments: /^([\s\S]*?)(<!--\[conf\.(yaml|json)\])\n([\s\S]+?)\n(\[conf\.\3\]-->)(?:$|\n([\s\S]*)$)/
+  // comments: /^([\s\S]*?)(<!--\[conf\.(yaml|json)\])\n([\s\S]+?)\n(\[conf\.\3\]-->)(?:$|\n([\s\S]*)$)/
+  comments: /^([\s\S]*?)(<!--\[conf\])\n([\s\S]+?)\n(\[conf\]-->)(?:$|\n([\s\S]*)$)/
 };
 
 /*!
@@ -35,9 +36,9 @@ function splitComments (str) {
   var match = str.match(regex.comments);
 
   return {
-    data: match[4],
-    content: match[6],
-    separator: match[3]
+    data: match[3],
+    content: match[5],
+    separator: 'yaml'
   };
 }
 

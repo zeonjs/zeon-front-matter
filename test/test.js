@@ -79,9 +79,9 @@ describe('zeon-front-matter', function() {
 
     it('comments mode', function () {
       var str = [
-        '<!--[conf.yaml]',
+        '<!--[conf]',
         'foo',
-        '[conf.yaml]-->',
+        '[conf]-->',
         'bar'
       ].join('\n');
 
@@ -92,18 +92,6 @@ describe('zeon-front-matter', function() {
       });
     });
 
-    it('comments mode without type', function () {
-      var str = [
-        '<!--[conf]',
-        'foo',
-        '[conf]-->',
-        'bar'
-      ].join('\n');
-
-      zfm.split(str).should.eql({
-        content: str
-      });
-    });
   });
 
   // parse
