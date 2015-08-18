@@ -1,6 +1,6 @@
 {
   "name": "zeon-front-matter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "zeon-front-matter",
   "main": "index.js",
   "scripts": {
