@@ -2,9 +2,9 @@
 
 var yaml = require('js-yaml');
 var regex = {
-  yaml: /^([\s\S]*?)(-{3,})\n([\s\S]+?)\n\2(?:$|\n([\s\S]*)$)/,
+  yaml: /^(\ufeff?)(-{3,})\r?\n([\s\S]+?)\r?\n\2(?:$|\r?\n([\s\S]*)$)/,
   // comments: /^([\s\S]*?)(<!--\[conf\.(yaml|json)\])\n([\s\S]+?)\n(\[conf\.\3\]-->)(?:$|\n([\s\S]*)$)/
-  comments: /^([\s\S]*?)(<!--\[conf\])\n([\s\S]+?)\n(\[conf\]-->)(?:$|\n([\s\S]*)$)/
+  comments: /^(\ufeff?)(<!--\[conf\])\r?\n([\s\S]+?)\r?\n(\[conf\]-->)(?:$|\r?\n([\s\S]*)$)/
 };
 
 /*!
